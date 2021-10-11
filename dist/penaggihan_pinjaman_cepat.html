@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Redesign</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    
+
+</head>
+<body class="">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navigation menu ] start -->
+	<nav class="pcoded-navbar menu-light ">
+		<div class="navbar-wrapper  ">
+			<div class="navbar-content scroll-div " >
+				
+				<div class="">
+					<div class="main-menu-header">
+						<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="User-Profile-Image">
+						<div class="user-details">
+							<div id="more-details">UX Designer <i class="fa fa-caret-down"></i></div>
+						</div>
+					</div>
+					<div class="collapse" id="nav-user-link">
+						<ul class="list-unstyled">
+							<li class="list-group-item"><a href="user-profile.html"><i class="feather icon-user m-r-5"></i>View Profile</a></li>
+							<li class="list-group-item"><a href="#!"><i class="feather icon-settings m-r-5"></i>Settings</a></li>
+							<li class="list-group-item"><a href="auth-normal-sign-in.html"><i class="feather icon-log-out m-r-5"></i>Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<ul class="nav pcoded-inner-navbar ">
+					<li class="nav-item pcoded-menu-caption">
+					    <label>Navigation</label>
+					</li>
+					<li class="nav-item">
+					    <a href="index.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-cogs"></i></span><span class="pcoded-mtext">Pengaturan</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="tambahakun.html">Tambah Akun</a></li>
+					        <li><a href="peran.html">Peran</a></li>
+					        <li><a href="akses.html">Akses</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-database"></i></span><span class="pcoded-mtext">Basis Data</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="informasi_produk.html">Informasi Produk</a></li>
+					        <li><a href="informasi_bank.html">Informasi Bank</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-handshake"></i></span><span class="pcoded-mtext">Pencairan</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="verifikasi_pencairan.html">Verifikasi Pencairan</a></li>
+					        <li><a href="pencarian_data_pencairan.html">Pencarian Data Pencairan</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-swatchbook"></i></span><span class="pcoded-mtext">Hapus Buku</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="pinjaman_cepat.html">Pinjaman Cepat</a></li>
+					        <li><a href="#">Pinjaman Merchant</a></li>
+					        <li><a href="#">Pinjaman Modal</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-paste"></i></span><span class="pcoded-mtext">laporan</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#">Laporan Penaggihan</a></li>
+					        <li><a href="#">Laporan Cek Dokumen</a></li>
+					        <li><a href="#">Laporan Cek Telepon</a></li>
+					        <li><a href="#">Laporan Analisa Kredit</a></li>
+					        <li><a href="#">Laporan Hapus Buku</a></li>
+					        <li><a href="#">Laporan Restrukturisasi</a></li>
+					        <li><a href="#">Laporan Pendapatan</a></li>
+					        <li><a href="#">Laporan Lender Aktif</a></li>
+					        <li><a href="#">Laporan Pendanaan</a></li>
+					        <li><a href="#">Laporan Pendapatan</a></li>
+					        <li><a href="#">Laporan Portfoilio</a></li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-hand-holding-usd"></i></span><span class="pcoded-mtext">Penerima Pinjaman</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="">Pinjaman Cepat</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">EKYC Data Pemohon</a></li>
+                                    <li><a href="#">Verifikasi Pemohon</a></li>
+                                    <li><a href="#">Final Pengecekan</a></li>
+                                </ul>
+                            </li>
+					        <li><a href="#!">Pinjaman Modal</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">EKYC Data Pemohon</a></li>
+                                    <li><a href="#">Verifikasi Pemohon</a></li>
+                                    <li><a href="#">Final Pengecekan</a></li>
+                                </ul>
+                            </li>
+					        <li><a href="#!">Pinjaman Merchant</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">EKYC Data Pemohon</a></li>
+                                    <li><a href="#">Verifikasi Pemohon</a></li>
+                                    <li><a href="#">Final Pengecekan</a></li>
+                                </ul>
+                            </li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-hand-holding-heart"></i></span><span class="pcoded-mtext">Pemberi Pinjaman</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#!">Verifikasi Pendana</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">EKYC Data Pemohon</a></li>
+                                    <li><a href="#">Verifikasi Pemohon</a></li>
+                                    <li><a href="#">Final Pengecekan</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Persetujuan Pencairan</a></li>
+                            <li><a href="#">Persetujuan Pembayaran</a></li>
+                            <li><a href="#">Pendapatan Prosperitree</a></li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-store"></i></span><span class="pcoded-mtext">Mitra</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#">Verifikasi Mitra</a></li>
+					        <li><a href="#">Verifikasi Asosiasi</a></li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-briefcase"></i></span><span class="pcoded-mtext">Pembagian Tugas</span></a>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-users"></i></span><span class="pcoded-mtext">Daftar Pemohon</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#">Pinjaman Cepat</a></li>
+					        <li><a href="#">Pinjaman Modal</a></li>
+					        <li><a href="#">Pinjaman Merchant</a></li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-wallet"></i></span><span class="pcoded-mtext">Penaggihan</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#">Pinjaman Cepat</a></li>
+					        <li><a href="#">Pinjaman Modal</a></li>
+					        <li><a href="#">Pinjaman Merchant</a></li>
+                            <li><a href="#!">Restrukturisasi Pembayaran</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">Penambahan Jangka Waktu</a></li>
+                                    <li><a href="#">Restrukturisasi Nomonal Pinjaman</a></li>
+                                </ul>
+                            </li>
+					    </ul>
+					</li>
+				</ul>
+				
+				<div class="card text-center">
+					<div class="card-block">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<i class="feather icon-sunset f-40"></i>
+						<h6 class="mt-3">Download Pro</h6>
+						<p>Getting more features with pro version</p>
+						<a href="https://1.envato.market/qG0m5" target="_blank" class="btn btn-primary btn-sm text-white m-0">Upgrade Now</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue">
+		
+			
+				<div class="m-header">
+					<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+					<a href="#!" class="b-brand">
+						<!-- ========   change your logo hear   ============ -->
+						<img src="assets/images/logo.png" alt="" class="logo">
+						<img src="assets/images/logo-icon.png" alt="" class="logo-thumb">
+					</a>
+					<a href="#!" class="mob-toggler">
+						<i class="feather icon-more-vertical"></i>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
+							<div class="search-bar">
+								<input type="text" class="form-control border-0 shadow-none" placeholder="Search hear">
+								<button type="button" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li>
+							<div class="dropdown">
+								<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="icon feather icon-bell"></i></a>
+								<div class="dropdown-menu dropdown-menu-right notification">
+									<div class="noti-head">
+										<h6 class="d-inline-block m-b-0">Notifications</h6>
+										<div class="float-right">
+											<a href="#!" class="m-r-10">mark as read</a>
+											<a href="#!">clear all</a>
+										</div>
+									</div>
+									<ul class="noti-body">
+										<li class="n-title">
+											<p class="m-b-0">NEW</p>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>John Doe</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>5 min</span></p>
+													<p>New ticket Added</p>
+												</div>
+											</div>
+										</li>
+										<li class="n-title">
+											<p class="m-b-0">EARLIER</p>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>10 min</span></p>
+													<p>Prchace New Theme and make payment</p>
+												</div>
+											</div>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>Sara Soudein</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>12 min</span></p>
+													<p>currently login</p>
+												</div>
+											</div>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+													<p>Prchace New Theme and make payment</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<div class="noti-footer">
+										<a href="#!">show all</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown drp-user">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="feather icon-user"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right profile-notification">
+									<div class="pro-head">
+										<img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
+										<span>John Doe</span>
+										<a href="auth-signin.html" class="dud-logout" title="Logout">
+											<i class="feather icon-log-out"></i>
+										</a>
+									</div>
+									<ul class="pro-body">
+										<li><a href="user-profile.html" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
+										<li><a href="email_inbox.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a></li>
+										<li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			
+	</header>
+	<!-- [ Header ] end -->
+	
+	
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Penaggihan</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#"> Pinjaman Cepat</a></li>                            
+                            <li class="breadcrumb-item active"><a href="#"> Penaggihan</a></li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-body">
+            <div class="row">
+				<div class="col-12">
+					<div class="card">
+					<div class="card-header">
+					  <div class="row">
+						<div class="col-12">
+						  <h3 class="card-title text-bold mb-4">Tindakan Koneksi</h3>
+						  <table id="example1" class="table table-bordered table-striped">
+							<thead>
+							<tr>
+							  <th>Tujuan Nomor Telepon</th>
+							  <td>
+								<select class="form-control select2" style="width: 100%;">
+								  <option selected="selected">Pilih...</option>
+								  <option>Telepon Kantor</option>
+								  <option>Ponsel</option>
+								  <option>Whatsapp</option>
+								</select>
+							  </td>
+							  <td class="text-center">
+								<button class="btn btn-success">
+								  <i class="fa fa-phone"></i>
+								</button>
+							  </td>
+							</tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<th>Nama Peminjam</th>
+								<td>
+								  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan">
+								</td>
+								<td class="text-center">
+								  <button class="btn btn-success">
+									<i class="fa fa-phone"></i>
+								  </button>
+								</td>
+							  </tr>
+							  <tr>
+								<th>Staus</th>
+								<td colspan="2">
+								  <select class="form-control select2" style="width: 100%;">
+									<option selected="selected">Pilih...</option>
+									<option>Tersambung</option>
+									<option>Tidak Aktif</option>
+									<option>Tidak Terdaftar</option>
+									<option>Tidak di Tempat</option>
+									<option>Salah Sambung</option>
+								  </select>
+								</td>
+							  </tr>
+							  <tr>
+								<th>Janji Bayar</th>
+								<td colspan="2">
+								  <div class="input-group date" id="reservationdate" data-target-input="nearest">
+									<input type="date" class="form-control datetimepicker-input" data-target="#reservationdate"/>
+									
+								</div>
+								</td>
+							  </tr>
+							  <tr>
+								<th>Keterangan</th>
+								<td colspan="2">
+								  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan">
+								</td>
+							  </tr>
+							</tbody>
+						  </table>
+						  <div class="card-footer">
+							<button class="btn btn-success">Submit</button>
+						  </div>
+						</div>
+						<div class="col-12 mt-5">
+						  <div class="card-body table-responsive p-0" style="height: 120px;">
+							<table class="table table-head-fixed text-nowrap">
+							  <thead>
+								<tr>
+								  <th>Tanggal</th>
+								  <th>Nomor Tujuan</th>
+								  <th>Nomor Telepon</th>
+								  <th>Status</th>
+								  <th>Janji Bayar</th>
+								  <th>Keterangan</th>
+								  <th>Rekaman</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <td>09/Januari/2021</td>
+								  <td>Kantor</td>
+								  <td>021 321 321</td>
+								  <td>Tersambung</td>
+								  <td>20/20/2021</td>
+								  <td>Keterangan</td>
+								  <td>Keterangan</td>
+								</tr>
+								<tr>
+								  <td>09/Januari/2021</td>
+								  <td>Kantor</td>
+								  <td>021 321 321</td>
+								  <td>Tersambung</td>
+								  <td>20/20/2021</td>
+								  <td>Keterangan</td>
+								  <td>Keterangan</td>
+								</tr>
+								<tr>
+								  <td>09/Januari/2021</td>
+								  <td>Kantor</td>
+								  <td>021 321 321</td>
+								  <td>Tersambung</td>
+								  <td>20/20/2021</td>
+								  <td>Keterangan</td>
+								  <td>Keterangan</td>
+								</tr>
+								<tr>
+								  <td>09/Januari/2021</td>
+								  <td>Kantor</td>
+								  <td>021 321 321</td>
+								  <td>Tersambung</td>
+								  <td>20/20/2021</td>
+								  <td>Keterangan</td>
+								  <td>Keterangan</td>
+								</tr>
+								
+							  </tbody>
+							</table>
+						  </div>
+						</div>
+					  </div>
+					 <div class="row mt-5">
+					  <div class="col-11">
+						<h3 class="card-title text-bold">Penaggihan</h3>
+					   </div>
+					   <div class="col">
+					   </div>
+					 </div>
+					</div>
+					<div class="">
+					  <div class="card-header d-flex p-0">
+						<ul class="nav nav-pills ml-auto p-2">
+						  <li class="nav-item"><a class="nav-link active" href="#tab_1" data-toggle="tab"><i class="fa fa-briefcase pr-2"></i>Data Pinjaman</a></li>
+						  <li class="nav-item"><a class="nav-link" href="#tab_2" data-toggle="tab">Data Pribadi</a></li>
+						  <li class="nav-item"><a class="nav-link" href="#tab_4" data-toggle="tab">Data Verifikator</a></li>
+						  <li class="nav-item"><a class="nav-link" href="#tab_5" data-toggle="tab">Kode Pembayaran</a></li>
+						</ul>
+					  </div><!-- /.card-header -->
+					  <div class="card-body">
+						<div class="tab-content">
+						  <div class="tab-pane active" id="tab_1">
+							<div class="card-header">
+							  <nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+								  <li class="breadcrumb-item">Penaggihan</li>
+								  <li class="breadcrumb-item text-bold">Data Pinjaman</li>
+								</ol> 
+							  </nav>
+							  <div class="row">
+								<div class="col-12">
+								  <table id="example1" class="table table-bordered table-striped">
+									<thead>
+									<tr>
+									  <th>Nomor Pinjaman</th>
+									  <td>021-213-321</td>
+									</tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<th>Nama Peminjam</th>
+										<td>
+										  jajang
+										</td>
+									  </tr>
+									  <tr>
+										<th>Nominal Pinjaman</th>
+										<td>
+										  Rp. 10.250.000
+										</td>
+									  </tr>
+									  <tr>
+										<th>Tangal Pencairan</th>
+										<td>
+										  29/01/2021
+										</td>
+									  </tr>
+									  <tr>
+										<th>Jangka Waktu Pinjaman</th>
+										<td>
+										  14 Hari
+										</td>
+									  </tr>
+									  <tr>
+										<th>Biaya Administrasi</th>
+										<td>
+										  Rp. 250.000
+										</td>
+									  </tr>
+									  <tr>
+										<th>Pinjaman diterima</th>
+										<td>
+										  Rp. 10.0000.000
+										</td>
+									  </tr>
+									  <tr>
+										<th>Bunga</th>
+										<td>
+										  Rp. 205.000
+										</td>
+									  </tr>
+									  <tr>
+										<th>Denda</th>
+										<td>
+										  0
+										</td>
+									  </tr>
+									  <tr>
+										<th>Nilai Tagihan</th>
+										<td>
+										  Rp. 10.455.000
+										</td>
+									  </tr>
+									  <tr>
+										<th>Tanggal Jatuh Tempo</th>
+										<td>
+										  14/03/2021
+										</td>
+									  </tr>
+									  
+									  <tr>
+										<th>Keterlambatan</th>
+										<td>
+										  
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+								</div>
+							  </div>
+							</div>
+						  </div>                    
+						  <div class="tab-pane" id="tab_2">
+							  <div class="row">
+								<div class="col-4">
+								  <div class="card card-primary card-outline">
+									<div class="card-body box-profile">
+									  <div class="text-center">
+										<img class="img-fluid img-circle my-4"
+											src="assets/images/ktp.png" width="200px">
+										  <h5>Foto KTP</h5>
+									  </div>
+									</div>
+									<!-- /.card-body -->
+								  </div>
+								  <div class="card card-primary card-outline">
+									<div class="card-body box-profile">
+									  <div class="text-center">
+										<img class="img-fluid img-circle my-4"
+											src="assets/images/ktp.png" width="200px">
+											<h5>Bukti Pinjaman</h5>
+									  </div>
+									</div>
+									<!-- /.card-body -->
+								  </div>
+								</div>
+								<div class="col-8">
+								  <nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+									  <li class="breadcrumb-item">Penaggihan</li>
+									  <li class="breadcrumb-item text-bold">Data Pribadi</li>
+									</ol> 
+								  </nav>
+								  <table id="example1" class="table table-bordered table-striped">
+									<thead>
+									<tr>
+									  <th>Nama</th>
+									  <td>Jajang</td>
+									</tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<th>Nomor KTP</th>
+										<td>
+										  367111029189812
+										</td>
+									  </tr>
+									  <tr>
+										<th>Status Penikahan</th>
+										<td>
+										  Kawin
+										</td>
+									  </tr>
+									  <tr>
+										<th>Tujuan Pinjaman</th>
+										<td>
+										  Modal Bisnis
+										</td>
+									  </tr>
+									  <tr>
+										<th>Alamat Domisili</th>
+										<td>
+										  Jl.Merdeka Barat Jakarta Selatan
+										</td>
+									  </tr>
+									  <tr>
+										<th>Nomor Telepon Pribadi</th>
+										<td>
+										  0897627272
+										</td>
+									  </tr>
+									  <tr>
+										<th>Nomor Telepon BANK</th>
+										<td>
+										  0897863173
+										</td>
+									  </tr>
+									  <tr>
+										<th colspan="2">Kontak Tambahan</th>
+									  </tr>
+									  <tr>
+										<th>Anak Laki-Laki/Perempuan</th>
+										<td>
+										  Perempuan
+										</td>
+									  </tr>
+									  <tr>
+										<th>Pasangan</th>
+										<td>
+										  Junah
+										</td>
+									  </tr>
+									  <tr>
+										<th colspan="2">Lokasi Pengajuan</th>
+									  </tr>
+									  <tr>
+										<th>Kordinat</th>
+										<td>
+										  <a href="https://www.google.com/maps/d/u/0/viewer?ie=UTF8&hl=en&t=h&om=1&msa=0&ll=32.884590000000024%2C-117.24199&spn=0.001838%2C0.003787&z=19&mid=1GC-26pGg4Z58eto8mukpi6dyUj4">https://www.google.com/maps/@-6.2273378,106.8296488,15z</a>
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+								</div>
+							  </div>
+						  </div>                                                                               
+						  <div class="tab-pane" id="tab_4">
+							  <div class="row">
+								<div class="col-12">
+								  <nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+									  <li class="breadcrumb-item">Penaggihan</li>
+									  <li class="breadcrumb-item text-bold">Data Verifikasi Pinjaman</li>
+									</ol> 
+								  </nav>
+								  <table id="example1" class="table table-bordered table-striped align-middle">
+									<thead>
+									  <tr>
+										<th>Nama Pemohon</th>
+										<td>Ogan</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="alias suryanto" disabled>
+										</td>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<th>Nomor Telepon Kantor</th>
+										<td>021-3291212</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									  <tr>
+										<th>Website Perusahaan</th>
+										<td><a href="">www.jago.com</a></td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									  <tr>
+										<th>IVR Kantor</th>
+										<td>-</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									  <tr>
+										<th>Nama Perusahaan</th>
+										<td>PT. Jago Indonesia</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									  <tr>
+										<th>Profesi</th>
+										<td>Mekanik</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									  <tr>
+										<th>Tingkat Penghasilan</th>
+										<td>Rp.20.000.000</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									  <tr>
+										<th>Lama Kerja</th>
+										<td>2 Tahun</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									  <tr>
+										<th>Alamat Kantor</th>
+										<td>Jl.Menuju Yang Benar</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									  <tr>
+										<th>Tanggal Penggajian</th>
+										<td>Bulanan 5</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									  <tr>
+										<th>Status Karyawan</th>
+										<td>Tetap</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									  <tr>
+										<th>Penerima Telepon</th>
+										<td>Dadang Mulyana</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									  <tr>
+										<th>Kesimpulan</th>
+										<td>-</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									  <tr>
+										<th>Jabatan Pemohon</th>
+										<td>Staff</td>
+										<td class="text-center">
+										  <span class="bg-success text-white p-1"><i class="fa fa-check pr-2"></i> Data Sama</span>
+										</td>
+										<td>
+										  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" disabled>
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+								</div>
+							  </div>
+						  </div>                                        
+						  <div class="tab-pane" id="tab_5">
+							  <div class="row">
+								<div class="col-12">
+								  <nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+									  <li class="breadcrumb-item">Penaggihan</li>
+									  <li class="breadcrumb-item text-bold">Riwayat Pembayaran</li>
+									</ol> 
+								  </nav>
+								  <table id="example1" class="table table-bordered table-striped align-middle">
+									<thead>
+									  <tr>
+										<th>Nama Peminjam</th>
+										<td>Jajang</td>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<th>Total Tagihan</th>
+										<td>Rp. 1500.000,00</td>
+									  </tr>                     
+									  
+									  <tr>
+										<td></td>
+										<td>
+										  <button class="btn btn-primary">Buat Kode Pembayaran</button>
+										</td>
+									  </tr>      
+									  <tr>
+										<td>Bank Negara Indonesia</td>
+										<td>9891237183712</td>
+									  </tr>       
+									  <tr>
+										<td>Masa Berlaku</td>
+										<td>14:00 29/09/2021</td>
+									  </tr>
+									</tbody>
+								  </table>
+								</div>
+							  </div>
+						  </div>                                        
+						</div>
+					  </div>
+					</div>
+				  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Required Js -->
+    <script src="assets/js/vendor-all.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/ripple.js"></script>
+    <script src="assets/js/pcoded.min.js"></script>
+
+<!-- Apex Chart -->
+<script src="assets/js/plugins/apexcharts.min.js"></script>
+<script src="assets/js/pages/chart-apex.js"></script>
+
+
+<!-- custom-chart js -->
+<script src="assets/js/pages/dashboard-main.js"></script>
+</body>
+
+</html>

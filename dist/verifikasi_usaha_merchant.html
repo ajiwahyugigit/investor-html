@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Redesign</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    
+
+</head>
+<body class="">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navigation menu ] start -->
+	<nav class="pcoded-navbar menu-light ">
+		<div class="navbar-wrapper  ">
+			<div class="navbar-content scroll-div " >
+				
+				<div class="">
+					<div class="main-menu-header">
+						<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="User-Profile-Image">
+						<div class="user-details">
+							<div id="more-details">UX Designer <i class="fa fa-caret-down"></i></div>
+						</div>
+					</div>
+					<div class="collapse" id="nav-user-link">
+						<ul class="list-unstyled">
+							<li class="list-group-item"><a href="user-profile.html"><i class="feather icon-user m-r-5"></i>View Profile</a></li>
+							<li class="list-group-item"><a href="#!"><i class="feather icon-settings m-r-5"></i>Settings</a></li>
+							<li class="list-group-item"><a href="auth-normal-sign-in.html"><i class="feather icon-log-out m-r-5"></i>Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<ul class="nav pcoded-inner-navbar ">
+					<li class="nav-item pcoded-menu-caption">
+					    <label>Navigation</label>
+					</li>
+					<li class="nav-item">
+					    <a href="index.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-cogs"></i></span><span class="pcoded-mtext">Pengaturan</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="tambahakun.html">Tambah Akun</a></li>
+					        <li><a href="peran.html">Peran</a></li>
+					        <li><a href="akses.html">Akses</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-database"></i></span><span class="pcoded-mtext">Basis Data</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="informasi_produk.html">Informasi Produk</a></li>
+					        <li><a href="informasi_bank.html">Informasi Bank</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-handshake"></i></span><span class="pcoded-mtext">Pencairan</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="verifikasi_pencairan.html">Verifikasi Pencairan</a></li>
+					        <li><a href="pencarian_data_pencairan.html">Pencarian Data Pencairan</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-swatchbook"></i></span><span class="pcoded-mtext">Hapus Buku</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="pinjaman_cepat.html">Pinjaman Cepat</a></li>
+					        <li><a href="#">Pinjaman Merchant</a></li>
+					        <li><a href="#">Pinjaman Modal</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-paste"></i></span><span class="pcoded-mtext">laporan</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#">Laporan Penaggihan</a></li>
+					        <li><a href="#">Laporan Cek Dokumen</a></li>
+					        <li><a href="#">Laporan Cek Telepon</a></li>
+					        <li><a href="#">Laporan Analisa Kredit</a></li>
+					        <li><a href="#">Laporan Hapus Buku</a></li>
+					        <li><a href="#">Laporan Restrukturisasi</a></li>
+					        <li><a href="#">Laporan Pendapatan</a></li>
+					        <li><a href="#">Laporan Lender Aktif</a></li>
+					        <li><a href="#">Laporan Pendanaan</a></li>
+					        <li><a href="#">Laporan Pendapatan</a></li>
+					        <li><a href="#">Laporan Portfoilio</a></li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-hand-holding-usd"></i></span><span class="pcoded-mtext">Penerima Pinjaman</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="">Pinjaman Cepat</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">EKYC Data Pemohon</a></li>
+                                    <li><a href="#">Verifikasi Pemohon</a></li>
+                                    <li><a href="#">Final Pengecekan</a></li>
+                                </ul>
+                            </li>
+					        <li><a href="#!">Pinjaman Modal</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">EKYC Data Pemohon</a></li>
+                                    <li><a href="#">Verifikasi Pemohon</a></li>
+                                    <li><a href="#">Final Pengecekan</a></li>
+                                </ul>
+                            </li>
+					        <li><a href="#!">Pinjaman Merchant</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">EKYC Data Pemohon</a></li>
+                                    <li><a href="#">Verifikasi Pemohon</a></li>
+                                    <li><a href="#">Final Pengecekan</a></li>
+                                </ul>
+                            </li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-hand-holding-heart"></i></span><span class="pcoded-mtext">Pemberi Pinjaman</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#!">Verifikasi Pendana</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">EKYC Data Pemohon</a></li>
+                                    <li><a href="#">Verifikasi Pemohon</a></li>
+                                    <li><a href="#">Final Pengecekan</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Persetujuan Pencairan</a></li>
+                            <li><a href="#">Persetujuan Pembayaran</a></li>
+                            <li><a href="#">Pendapatan Prosperitree</a></li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-store"></i></span><span class="pcoded-mtext">Mitra</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#">Verifikasi Mitra</a></li>
+					        <li><a href="#">Verifikasi Asosiasi</a></li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-briefcase"></i></span><span class="pcoded-mtext">Pembagian Tugas</span></a>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-users"></i></span><span class="pcoded-mtext">Daftar Pemohon</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#">Pinjaman Cepat</a></li>
+					        <li><a href="#">Pinjaman Modal</a></li>
+					        <li><a href="#">Pinjaman Merchant</a></li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-wallet"></i></span><span class="pcoded-mtext">Penaggihan</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#">Pinjaman Cepat</a></li>
+					        <li><a href="#">Pinjaman Modal</a></li>
+					        <li><a href="#">Pinjaman Merchant</a></li>
+                            <li><a href="#!">Restrukturisasi Pembayaran</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">Penambahan Jangka Waktu</a></li>
+                                    <li><a href="#">Restrukturisasi Nomonal Pinjaman</a></li>
+                                </ul>
+                            </li>
+					    </ul>
+					</li>
+				</ul>
+				
+				<div class="card text-center">
+					<div class="card-block">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<i class="feather icon-sunset f-40"></i>
+						<h6 class="mt-3">Download Pro</h6>
+						<p>Getting more features with pro version</p>
+						<a href="https://1.envato.market/qG0m5" target="_blank" class="btn btn-primary btn-sm text-white m-0">Upgrade Now</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue">
+		
+			
+				<div class="m-header">
+					<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+					<a href="#!" class="b-brand">
+						<!-- ========   change your logo hear   ============ -->
+						<img src="assets/images/logo.png" alt="" class="logo">
+						<img src="assets/images/logo-icon.png" alt="" class="logo-thumb">
+					</a>
+					<a href="#!" class="mob-toggler">
+						<i class="feather icon-more-vertical"></i>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
+							<div class="search-bar">
+								<input type="text" class="form-control border-0 shadow-none" placeholder="Search hear">
+								<button type="button" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li>
+							<div class="dropdown">
+								<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="icon feather icon-bell"></i></a>
+								<div class="dropdown-menu dropdown-menu-right notification">
+									<div class="noti-head">
+										<h6 class="d-inline-block m-b-0">Notifications</h6>
+										<div class="float-right">
+											<a href="#!" class="m-r-10">mark as read</a>
+											<a href="#!">clear all</a>
+										</div>
+									</div>
+									<ul class="noti-body">
+										<li class="n-title">
+											<p class="m-b-0">NEW</p>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>John Doe</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>5 min</span></p>
+													<p>New ticket Added</p>
+												</div>
+											</div>
+										</li>
+										<li class="n-title">
+											<p class="m-b-0">EARLIER</p>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>10 min</span></p>
+													<p>Prchace New Theme and make payment</p>
+												</div>
+											</div>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>Sara Soudein</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>12 min</span></p>
+													<p>currently login</p>
+												</div>
+											</div>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+													<p>Prchace New Theme and make payment</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<div class="noti-footer">
+										<a href="#!">show all</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown drp-user">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="feather icon-user"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right profile-notification">
+									<div class="pro-head">
+										<img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
+										<span>John Doe</span>
+										<a href="auth-signin.html" class="dud-logout" title="Logout">
+											<i class="feather icon-log-out"></i>
+										</a>
+									</div>
+									<ul class="pro-body">
+										<li><a href="user-profile.html" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
+										<li><a href="email_inbox.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a></li>
+										<li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			
+	</header>
+	<!-- [ Header ] end -->
+	
+	
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Verifikasi Peminjam</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="pengaturan.html">Verifikasi Peminjam</a></li>
+                            <li class="breadcrumb-item active"><a href="#">Pinjaman Merchant</a></li>                            
+                            <li class="breadcrumb-item active"><a href="#">Verifikasi Usaha</a></li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-3">
+									<div class="form-group">
+                                        <label class="floating-label" for="Email">Nomor Peminjam</label>
+                                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                                    </div>
+								</div>
+                                <div class="col-3">
+									<div class="form-group">
+                                        <label class="floating-label" for="Email">Nama Calon Peminjam</label>
+                                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                                    </div>
+								</div>
+                                <div class="col-3">
+									<div class="form-group">
+                                        <label class="floating-label" for="Email">Nominal Pinjaman</label>
+                                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                                    </div>
+								</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+									<div class="form-group">
+                                        <label class="floating-label" for="Email">Tenor Pinjaman</label>
+                                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                                    </div>
+								</div>
+                                <div class="col-2">
+									<div class="form-group">
+                                        <label class="floating-label" for="Email">Tanggal Kunjungan :</label>
+                                    </div>
+								</div>
+								<div class="col-3">
+									<input type="date" class="form-control" id="Email" aria-describedby="emailHelp">
+								</div>
+                                <div class="col-3">
+									<div class="form-group">
+                                        <label class="floating-label" for="Email">Alamat Usaha</label>
+                                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                                    </div>
+								</div>
+                            </div>
+							<div class="row">
+								<div class="col">
+									<nav aria-label="breadcrumb">
+										<ol class="breadcrumb">
+										  <li class="breadcrumb-item">Verifikasi Usaha</li>
+										  <li class="breadcrumb-item">Foto</li>
+										</ol>
+									  </nav>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<!-- Profile Image -->
+									<div class="card card-primary card-outline">
+									  <div class="card-body box-profile">
+										<div class="text-center">
+										  <img class="profile-user-img img-fluid img-circle"
+											  src="assets/images/profile.png">
+										</div>
+										<h6 class="profile-username text-center mt-4">Foto Selfie</h6>
+									
+									  </div>
+									  <!-- /.card-body -->
+									</div>
+									<!-- /.card -->
+									
+							
+								</div>
+								<div class="col-3">
+									<!-- Profile Image -->
+									<div class="card card-primary card-outline">
+									  <div class="card-body box-profile">
+										<div class="text-center">
+										  <img class="profile-user-img img-fluid img-circle"
+											  src="assets/images/profile.png">
+										</div>
+										<h6 class="profile-username text-center mt-4">Foto Tempat Usaha</h6>
+									
+									  </div>
+									  <!-- /.card-body -->
+									</div>
+									<!-- /.card -->
+									
+							
+								</div>
+								<div class="col-3">
+									<!-- Profile Image -->
+									<div class="card card-primary card-outline">
+									  <div class="card-body box-profile">
+										<div class="text-center">
+										  <img class="profile-user-img img-fluid img-circle"
+											  src="assets/images/profile.png">
+										</div>
+										<h6 class="profile-username text-center mt-2">Foto Bukti Kepemilikan Tempat</h6>
+									
+									  </div>
+									  <!-- /.card-body -->
+									</div>
+									<!-- /.card -->
+									
+							
+								</div>
+								<div class="col-3">
+									<!-- Profile Image -->
+									<div class="card card-primary card-outline">
+									  <div class="card-body box-profile">
+										<div class="text-center">
+										  <img class="profile-user-img img-fluid img-circle"
+											  src="assets/images/profile.png">
+										</div>
+										<h6 class="profile-username text-center mt-4">Foto Aktivitas Usaha</h6>
+									
+									  </div>
+									  <!-- /.card-body -->
+									</div>
+									<!-- /.card -->
+									
+							
+								</div>
+                            </div>
+                        </div>
+                        <div class="card-body table-border-style">
+                            <div class="table-responsive">
+								<table id="example1" class="table table-bordered table-striped">
+									<thead>
+										<tr>
+											<th>Bidang Usaha</th>
+											<td>
+												<select class="form-control" id="status">
+													<option>Pertanian, Perburuan dan Kehutanan</option>
+													<option>Perikanan</option>
+													<option>Pertambangan dan Penggalian</option>
+													<option>Industri Pengolahan</option>
+													<option>Listrik, Gas, dan Air</option>
+													<option>Konstruksi</option>
+													<option>Perdagangan Besar dan Eceran</option>
+													<option>Penyediaan Akomodasi dan Penyediaan Makan Minum</option>
+													<option>Transportasi, Pergudangan, dan Komunikasi</option>
+													<option>Perantara Keuangan</option>
+													<option>Real Estate, Usaha Persewaan, dan Jasa Penyelenggara</option>
+													<option>Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib</option>
+													<option>Jasa Pendidikan</option>
+													<option>Jasa Kesehatan dan Kegiatan Sosial</option>
+													<option>Kegiatan Organisasi Yang Tidak Diklasifikasi Di tempat Lain</option>
+													<option>Jasa Perorangan yang Melayani Rumah Tangga</option>
+													<option>Badan Internasional dan Badan Ekstra Internasional Lainnya</option>
+													<option>Kegiatan yang Belum Jelas Batasannya</option>
+													<option>Sektor Ekonomi Bukan Lapangan Usaha</option>
+													<option>Rumah Tangga</option>
+													<option>Bukan Lapangan Usaha Lainnya</option>
+													
+												</select>
+											</td>
+											<td>
+												<div class="input-group mb-3">
+													<div class="custom-file">
+														<input type="file" class="custom-file-input" id="inputGroupFile01">
+														<label class="custom-file-label" for="inputGroupFile01">Foto Tempat Usaha</label>
+													</div>
+												</div>
+											  </td>
+										  </tr>
+									
+									</thead>
+									<tbody>
+										<tr>
+											<th>Status Badan Hukum</th>
+											<td>
+												<select class="form-control" id="status">
+													<option>Tidak Berbadan Hukum</option>
+													<option>Yayasan</option>
+													<option>Persekutuan Komanditer (CV)</option>
+													<option>Firma</option>
+													<option>Perusahaan Perseorangan</option>
+													<option>Perusahaan Terbatas (PT)</option>
+													<option>Usaha Dagang (UD)</option>
+												</select>
+											</td>
+											<td>
+												<div class="input-group mb-3">
+											
+													<div class="custom-file">
+														<input type="file" class="custom-file-input" id="inputGroupFile01">
+														<label class="custom-file-label" for="inputGroupFile01">Foto Aktifitas Usaha 1</label>
+													</div>
+												</div>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Status Kepemilikan Usaha</th>
+											<td>
+											  <select class="form-control" id="status">
+												  <option>Usaha Bersama dengan penanam modal lainnya</option>
+												  <option>Usaha Keluarga</option>
+												  <option>Usaha Milik Pribadi</option>
+											  </select>
+											</td>
+											<td>
+												<div class="input-group mb-3">
+											
+													<div class="custom-file">
+														<input type="file" class="custom-file-input" id="inputGroupFile01">
+														<label class="custom-file-label" for="inputGroupFile01">Foto Aktivitas Usaha 2</label>
+													</div>
+												</div>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Pernyataan Pendeskripsian Diri Calon Pemohon</th>
+											<td>
+												<select class="form-control" id="status">
+													<option>Pengusaha dengan usaha yang sedang berjalan dan pekerja di sektor swasta</option>
+													<option>Pengusaha dengan usaha yang sedang berjalan dan pekerja di pemerintahan</option>
+													<option>Pengusaha dengan usaha yang sedang beroperasi</option>
+													<option>Pengusaha yang berencana untuk memulai usaha</option>
+												</select>
+											</td>
+											<td>
+												<div class="input-group mb-3">
+											
+													<div class="custom-file">
+														<input type="file" class="custom-file-input" id="inputGroupFile01">
+														<label class="custom-file-label" for="inputGroupFile01">Foto Dokumen Usaha</label>
+													</div>
+												</div>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Lama Membuka Usaha</th>
+											<td>
+											  <select id="status" class="form-control">
+												  <option>Lebih dari 10 tahun</option>
+												  <option>5 – 10 tahun</option>
+												  <option>3 – 5 tahun</option>
+												  <option>1 – 2 tahun</option>
+												  <option>Kurang dari 1 tahun</option>
+											  </select>
+											</td>
+											<td>
+												<div class="input-group mb-3">
+											
+													<div class="custom-file">
+														<input type="file" class="custom-file-input" id="inputGroupFile01">
+														<label class="custom-file-label" for="inputGroupFile01">Foto Dokumen Bukti Tempat Usaha</label>
+													</div>
+												</div>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Jumlah Karyawan saat ini</th>
+											<td>
+											  <select id="status" class="form-control">
+												  <option>Lebih dari 10 Karyawan</option>
+												  <option>4-10 Karyawan</option>
+												  <option>Kurang dari 3 Karyawan</option>
+												  <option>Tidak memiliki karyawan</option>
+											  </select>
+											</td>
+											<td>
+												<div class="input-group mb-3">
+											
+													<div class="custom-file">
+														<input type="file" class="custom-file-input" id="inputGroupFile01">
+														<label class="custom-file-label" for="inputGroupFile01"> Dokumen Survei</label>
+													</div>
+												</div>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Jumlah Karyawan yang pernah dimiliki</th>
+											<td>
+											  <select id="status" class="form-control">
+												  <option>Tidak memiliki karyawan</option>
+												  <option>Kurang dari 3 Karyawan</option>
+												  <option>4-10 Karyawan</option>
+												  <option>Lebih dari 10 Karyawan</option>
+											  </select>
+											</td>
+											<td>
+												<div class="input-group mb-3">
+											
+													<div class="custom-file">
+														<input type="file" class="custom-file-input" id="inputGroupFile01">
+														<label class="custom-file-label" for="inputGroupFile01"> Foto NPWP Usaha</label>
+													</div>
+												</div>
+										</td>
+										  </tr>
+										  <tr>
+											<th>Terakhir Memiliki Karyawan</th>
+											<td>
+											  <select class="form-control" id="status">
+												  <option>Lebih dari 1 tahun yang lalu</option>
+												  <option>1 Tahun yang lalu</option>
+												  <option>6 Bulan yang lalu</option>
+												  <option>Belum Pernah</option>
+											  </select>
+											</td>
+											<td>
+												<div class="input-group mb-3">
+											
+													<div class="custom-file">
+														<input type="file" class="custom-file-input" id="inputGroupFile01">
+														<label class="custom-file-label" for="inputGroupFile01"> Foto NPWP Usaha</label>
+													</div>
+												</div>
+												
+											</td>
+										  </tr>
+										  <tr>
+											<th>Rata-rata penjualan selama 6 bulan</th>
+											<td>
+											  <select id="status" class="form-control">
+												  <option>Lebih dari 6 Juta</option>
+												  <option>3 Juta – 6 Juta</option>
+												  <option>1 Juta – 3 Juta</option>
+												  <option>Di bawah 1 juta</option>
+											  </select>
+											</td>
+											<td>
+												<button class="btn btn-success btn-block">
+													<i class="fa fa-cloud-upload-alt"></i>
+													Upload
+												</button>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Rata-Rata Penjualan selama 1 tahun</th>
+											<td>
+											  <select id="status" class="form-control">
+												  <option>Lebih dari 6 Juta</option>
+												  <option>3 Juta – 6 Juta</option>
+												  <option>1 Juta – 3 Juta</option>
+												  <option>Di bawah 1 juta</option>
+											  </select>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Rata-rata pengeluaran selama 6 bulan</th>
+											<td>
+											  <select id="status" class="form-control">
+												  <option>Di bawah 1 juta.</option>
+												  <option>1 Juta – 3 Juta.</option>
+												  <option>3 Juta – 6 Juta</option>
+												  <option>Lebih Dari 6 juta</option>
+											  </select>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Rata-rata pengeluaran selama 1 tahun</th>
+											<td>
+											  <select id="status" class="form-control">
+												  <option>Di bawah 1 juta.</option>
+												  <option>1 Juta – 3 Juta.</option>
+												  <option>3 Juta – 6 Juta</option>
+												  <option>Lebih Dari 6 juta</option>
+											  </select>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Rata-rata keuntungan selama 6 bulan</th>
+											<td>
+											  <select id="status" class="form-control">
+												  <option>Belum mendapatkan keuntungan</option>
+												  <option>Di bawah 3 Juta</option>
+												  <option>4 Juta – 6 Juta</option>
+												  <option>Lebih dari 6 Juta</option>
+											  </select>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Rata-rata keuntungan selama 1 tahun</th>
+											<td>
+											  <select id="status" class="form-control">
+												  <option>Lebih dari 6 Juta</option>
+												  <option>4 Juta – 6 Juta</option>
+												  <option>Di bawah 3 Juta</option>
+												  <option>Belum mendapatkan keuntungan</option>
+											  </select>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Persentase rata-rata nilai produksi dari harga nilai jual</th>
+											<td>
+											  <select id="status" class="form-control">
+												  <option>Di bawah 10% dari harga jual</option>
+												  <option>10-20% dari harga jual</option>
+												  <option>21% - 50% dari harga jual</option>
+												  <option>Lebih dari 50% harga jual</option>
+											  </select>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Metode Pemasaran atau penjualan yang digunakan</th>
+											<td>
+											  <select id="status" class="form-control">
+												  <option>Hanya dilakukan penjualan daring (online) atau sesuai pesanan saja</option>
+												  <option>Sesuai pesanan dan konsinyasi pada modern market</option>
+												  <option>Memiliki gerai, tokok atau restoran</option>
+												  <option>A,b dan c dilakukan</option>
+											  </select>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Status tempat usaha</th>
+											<td>
+											  <select id="status" class="form-control">
+												  <option>Ruko atau Kios kontrak</option>
+												  <option>Ruko atau Kios milik pribadi.</option>
+												  <option>Rumah kontrak</option>
+												  <option>Rumah milik keluarga atau pribadi.</option>
+											  </select>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Kebijakan Terhadap Informasi Barang</th>
+											<td>
+												<textarea class="form-control" rows="2">Barangnya harus sesuai dengan keadaan sebenarnya, baik dari segi nama, harga maupun informasi lainnya
+												</textarea>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Kebijakan pengiriman barang yang dipesan oleh konsumen</th>
+											<td>
+												<textarea class="form-control" rows="2">Jam operasional pengiriman adalah mulai pukul 08.30-17.00 WIB dan tersedia setiap hari, kecuali hari Minggu atau hari libur nasional.
+												</textarea>
+											</td>
+										  </tr>
+										  <tr>
+											<th>Layanan dalam Pemesanan Barang</th>
+											<td>
+												<select id="status" class="form-control">
+													<option>Keduanya</option>
+													<option>Order</option>
+													<option>Pre-Order</option>
+													
+												</select>
+											</td>
+										  </tr>
+									</tbody>
+								  </table>
+                            </div>
+							<div class="row">
+								<div class="col text-center">
+									<a href="" class="btn btn-danger">
+										<i class="fa fa-times-circle"></i>
+										Tolak Pengajuan
+									</a>
+									<a href="" class="btn btn-primary">
+										<i class="fa fa-check-circle"></i>
+										Lanjutkan Proses
+									</a>
+								</div>
+							</div>
+                        </div>
+						
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Required Js -->
+    <script src="assets/js/vendor-all.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/ripple.js"></script>
+    <script src="assets/js/pcoded.min.js"></script>
+
+<!-- Apex Chart -->
+<script src="assets/js/plugins/apexcharts.min.js"></script>
+
+
+<!-- custom-chart js -->
+<script src="assets/js/pages/dashboard-main.js"></script>
+</body>
+
+</html>

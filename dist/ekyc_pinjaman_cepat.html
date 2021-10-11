@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Redesign</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    
+
+</head>
+<body class="">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navigation menu ] start -->
+	<nav class="pcoded-navbar menu-light ">
+		<div class="navbar-wrapper  ">
+			<div class="navbar-content scroll-div " >
+				
+				<div class="">
+					<div class="main-menu-header">
+						<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="User-Profile-Image">
+						<div class="user-details">
+							<div id="more-details">UX Designer <i class="fa fa-caret-down"></i></div>
+						</div>
+					</div>
+					<div class="collapse" id="nav-user-link">
+						<ul class="list-unstyled">
+							<li class="list-group-item"><a href="user-profile.html"><i class="feather icon-user m-r-5"></i>View Profile</a></li>
+							<li class="list-group-item"><a href="#!"><i class="feather icon-settings m-r-5"></i>Settings</a></li>
+							<li class="list-group-item"><a href="auth-normal-sign-in.html"><i class="feather icon-log-out m-r-5"></i>Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<ul class="nav pcoded-inner-navbar ">
+					<li class="nav-item pcoded-menu-caption">
+					    <label>Navigation</label>
+					</li>
+					<li class="nav-item">
+					    <a href="index.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-cogs"></i></span><span class="pcoded-mtext">Pengaturan</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="tambahakun.html">Tambah Akun</a></li>
+					        <li><a href="peran.html">Peran</a></li>
+					        <li><a href="akses.html">Akses</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-database"></i></span><span class="pcoded-mtext">Basis Data</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="informasi_produk.html">Informasi Produk</a></li>
+					        <li><a href="informasi_bank.html">Informasi Bank</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-handshake"></i></span><span class="pcoded-mtext">Pencairan</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="verifikasi_pencairan.html">Verifikasi Pencairan</a></li>
+					        <li><a href="pencarian_data_pencairan.html">Pencarian Data Pencairan</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-swatchbook"></i></span><span class="pcoded-mtext">Hapus Buku</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="pinjaman_cepat.html">Pinjaman Cepat</a></li>
+					        <li><a href="#">Pinjaman Merchant</a></li>
+					        <li><a href="#">Pinjaman Modal</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-paste"></i></span><span class="pcoded-mtext">laporan</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#">Laporan Penaggihan</a></li>
+					        <li><a href="#">Laporan Cek Dokumen</a></li>
+					        <li><a href="#">Laporan Cek Telepon</a></li>
+					        <li><a href="#">Laporan Analisa Kredit</a></li>
+					        <li><a href="#">Laporan Hapus Buku</a></li>
+					        <li><a href="#">Laporan Restrukturisasi</a></li>
+					        <li><a href="#">Laporan Pendapatan</a></li>
+					        <li><a href="#">Laporan Lender Aktif</a></li>
+					        <li><a href="#">Laporan Pendanaan</a></li>
+					        <li><a href="#">Laporan Pendapatan</a></li>
+					        <li><a href="#">Laporan Portfoilio</a></li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-hand-holding-usd"></i></span><span class="pcoded-mtext">Penerima Pinjaman</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="">Pinjaman Cepat</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">EKYC Data Pemohon</a></li>
+                                    <li><a href="#">Verifikasi Pemohon</a></li>
+                                    <li><a href="#">Final Pengecekan</a></li>
+                                </ul>
+                            </li>
+					        <li><a href="#!">Pinjaman Modal</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">EKYC Data Pemohon</a></li>
+                                    <li><a href="#">Verifikasi Pemohon</a></li>
+                                    <li><a href="#">Final Pengecekan</a></li>
+                                </ul>
+                            </li>
+					        <li><a href="#!">Pinjaman Merchant</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">EKYC Data Pemohon</a></li>
+                                    <li><a href="#">Verifikasi Pemohon</a></li>
+                                    <li><a href="#">Final Pengecekan</a></li>
+                                </ul>
+                            </li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-hand-holding-heart"></i></span><span class="pcoded-mtext">Pemberi Pinjaman</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#!">Verifikasi Pendana</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">EKYC Data Pemohon</a></li>
+                                    <li><a href="#">Verifikasi Pemohon</a></li>
+                                    <li><a href="#">Final Pengecekan</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Persetujuan Pencairan</a></li>
+                            <li><a href="#">Persetujuan Pembayaran</a></li>
+                            <li><a href="#">Pendapatan Prosperitree</a></li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-store"></i></span><span class="pcoded-mtext">Mitra</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#">Verifikasi Mitra</a></li>
+					        <li><a href="#">Verifikasi Asosiasi</a></li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-briefcase"></i></span><span class="pcoded-mtext">Pembagian Tugas</span></a>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-users"></i></span><span class="pcoded-mtext">Daftar Pemohon</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#">Pinjaman Cepat</a></li>
+					        <li><a href="#">Pinjaman Modal</a></li>
+					        <li><a href="#">Pinjaman Merchant</a></li>
+					    </ul>
+					</li>
+                    <li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-wallet"></i></span><span class="pcoded-mtext">Penaggihan</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#">Pinjaman Cepat</a></li>
+					        <li><a href="#">Pinjaman Modal</a></li>
+					        <li><a href="#">Pinjaman Merchant</a></li>
+                            <li><a href="#!">Restrukturisasi Pembayaran</a>
+                                <ul class="pcoded-submenu">
+                                    <li><a href="#">Penambahan Jangka Waktu</a></li>
+                                    <li><a href="#">Restrukturisasi Nomonal Pinjaman</a></li>
+                                </ul>
+                            </li>
+					    </ul>
+					</li>
+				</ul>
+				
+				<div class="card text-center">
+					<div class="card-block">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<i class="feather icon-sunset f-40"></i>
+						<h6 class="mt-3">Download Pro</h6>
+						<p>Getting more features with pro version</p>
+						<a href="https://1.envato.market/qG0m5" target="_blank" class="btn btn-primary btn-sm text-white m-0">Upgrade Now</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue">
+		
+			
+				<div class="m-header">
+					<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+					<a href="#!" class="b-brand">
+						<!-- ========   change your logo hear   ============ -->
+						<img src="assets/images/logo.png" alt="" class="logo">
+						<img src="assets/images/logo-icon.png" alt="" class="logo-thumb">
+					</a>
+					<a href="#!" class="mob-toggler">
+						<i class="feather icon-more-vertical"></i>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
+							<div class="search-bar">
+								<input type="text" class="form-control border-0 shadow-none" placeholder="Search hear">
+								<button type="button" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li>
+							<div class="dropdown">
+								<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="icon feather icon-bell"></i></a>
+								<div class="dropdown-menu dropdown-menu-right notification">
+									<div class="noti-head">
+										<h6 class="d-inline-block m-b-0">Notifications</h6>
+										<div class="float-right">
+											<a href="#!" class="m-r-10">mark as read</a>
+											<a href="#!">clear all</a>
+										</div>
+									</div>
+									<ul class="noti-body">
+										<li class="n-title">
+											<p class="m-b-0">NEW</p>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>John Doe</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>5 min</span></p>
+													<p>New ticket Added</p>
+												</div>
+											</div>
+										</li>
+										<li class="n-title">
+											<p class="m-b-0">EARLIER</p>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>10 min</span></p>
+													<p>Prchace New Theme and make payment</p>
+												</div>
+											</div>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>Sara Soudein</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>12 min</span></p>
+													<p>currently login</p>
+												</div>
+											</div>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+													<p>Prchace New Theme and make payment</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<div class="noti-footer">
+										<a href="#!">show all</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown drp-user">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="feather icon-user"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right profile-notification">
+									<div class="pro-head">
+										<img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
+										<span>John Doe</span>
+										<a href="auth-signin.html" class="dud-logout" title="Logout">
+											<i class="feather icon-log-out"></i>
+										</a>
+									</div>
+									<ul class="pro-body">
+										<li><a href="user-profile.html" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
+										<li><a href="email_inbox.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a></li>
+										<li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			
+	</header>
+	<!-- [ Header ] end -->
+	
+	
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Penerima Pinjaman</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="pengaturan.html">Pinjaman Cepat</a></li>
+                            <li class="breadcrumb-item active"><a href="#">EKYC Data Pemohon</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+						<div class="card-header">
+						 <div class="row">
+						  <div class="col-11">
+							<h3 class="card-title text-bold">Verifikasi Data dam EKYC</h3>
+						   </div>
+						   <div class="col">
+						   </div>
+						 </div>
+						</div>
+						<div class="card-body">
+						  <div class="card-header d-flex p-0">
+							<ul class="nav nav-pills ml-auto p-2">
+							  <li class="nav-item"><a class="nav-link active" href="#tab_1" data-toggle="tab"><i class="fa fa-wallet pr-2"></i>Proses EKYC</a></li>
+							  <li class="nav-item"><a class="nav-link" href="#tab_2" data-toggle="tab">Verifikasi Data Karyawan</a></li>
+							  <li class="nav-item"><a class="nav-link" href="#tab_3" data-toggle="tab"> Verifikasi Data NPWP</a></li>
+							  <li class="nav-item"><a class="nav-link" href="#tab_4" data-toggle="tab"> Verifikasi Vidio</a></li>
+							  <li class="nav-item"><a class="nav-link" href="#tab_5" data-toggle="tab">Keputusan Akhir</a></li>
+							</ul>
+						  </div><!-- /.card-header -->
+						  <div class="card-body">
+							<div class="tab-content">
+							  <div class="tab-pane active" id="tab_1">
+								<div class="row">
+								  <div class="col-3">
+									<!-- Profile Image -->
+									<div class="card card-primary card-outline">
+									  <div class="card-body box-profile">
+										<div class="text-center">
+										  <img class="profile-user-img img-fluid img-circle"
+											  src="assets/images/profile.png">
+										</div>
+										<h4 class="profile-username text-center">Foto Selfie</h4>
+										<a href="#" class="btn btn-primary btn-block"><b><i class="fa fa-edit pr-2"></i>Revisi</b></a>
+									  </div>
+									  <!-- /.card-body -->
+									</div>
+									<!-- /.card -->
+									<!-- Profile Image -->
+									<div class="card card-primary card-outline">
+									  <div class="card-body box-profile">
+										<div class="text-center">
+										  <img class="profile-user-img img-fluid img-circle"
+											  src="assets/images/ktp.png">
+										</div>
+		
+										<h4 class="profile-username text-center">Foto KTP</h4>
+										<a href="#tab_2" class="btn btn-primary btn-block"><b><i class="fa fa-edit pr-2"></i>Revisi</b></a>
+									  </div>
+									  <!-- /.card-body -->
+									</div>
+									<!-- /.card -->
+								  </div>
+								  <div class="col">
+									<nav aria-label="breadcrumb">
+									  <ol class="breadcrumb">
+										<li class="breadcrumb-item">Verifikasi Data dam EKYC</li>
+										<li class="breadcrumb-item text-bold">Proses EKYC</li>
+									  </ol> 
+									</nav>
+									<table id="example1" class="table table-bordered table-striped text-center">
+									  <thead>
+									  <tr>
+										<th>NIK</th>
+										<td>36711109897872</td>
+										<td class="text-white"><span class="bg-success p-1"><i class="fa fa-check pr-2"></i>Hasil Sama</span></td>
+									  </tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <th>Nama</th>
+										  <td>Juned Mul</td>
+										  <td class="text-white"><span class="bg-success p-1"><i class="fa fa-check pr-2"></i>Hasil Sama</span></td>
+										</tr>
+										<tr>
+										  <th>Tempat Lahir</th>
+										  <td>Jakarta</td>
+										  <td class="text-white"><span class="bg-success p-1"><i class="fa fa-check pr-2"></i>Hasil Sama</span></td>
+										</tr>
+										<tr>
+										  <th>Tanggal Lahir</th>
+										  <td>09 September 1978</td>
+										  <td class="text-white"><span class="bg-danger p-1"><i class="fa fa-check pr-2"></i>Hasil Berbeda</span></td>
+										</tr>
+										<tr>
+										  <th>Alamat</th>
+										  <td>Jl. Pendekar Satu Komp. Dua</td>
+										  <td class="text-white"><span class="bg-success p-1"><i class="fa fa-check pr-2"></i>Hasil Sama</span></td>
+										</tr>
+										<tr>
+										  <th>Foto Selfie</th>
+										  <td>
+											<div class="progress-group">
+											  <div class="progress progress-sm">
+												<div class="progress-bar bg-warning" style="width: 80%"></div>
+											  </div>
+											</div>
+										  </td>
+										  <td><span class="bg-warning p-1"> <i class="fas fa-spinner fa-spin"></i>80%</span></td>
+										</tr>
+									  </tbody>
+									</table>
+		
+									<button class="btn btn-success"><i class="fa fa-check-circle pr-2"></i>Cek EKYC</button> <br>
+
+									<div class="row">
+										<div class="col text-center">
+											<button class="btn btn-danger mt-2"><i class="fa fa-check-circle pr-2"></i>Tolak</button>
+
+											<a href="#tab_2" data-toggle="tab" class="btn btn-primary mt-2">
+												<i class="fa fa-check-circle"></i>
+												Lanjutkan
+											</a>
+										</div>
+									</div>
+								  </div>
+								  
+								</div>
+							  </div>                    
+							  <div class="tab-pane" id="tab_2">
+								<!-- Proses verifikasi DATA PEKERJAAN -->
+								<div class="row">
+								  <div class="col-3">
+									<!-- Profile Image -->
+									<div class="card card-primary card-outline">
+									  <div class="card-body box-profile">
+										<div class="text-center">
+										  <img class="profile-user-img img-fluid img-circle"
+											  src="assets/images/profile.png">
+										</div>
+										<h4 class="profile-username text-center">Foto Selfie & ID</h4>
+										<a href="" class="btn btn-primary btn-block"><b><i class="fa fa-edit pr-2"></i>Revisi</b></a>
+									  </div>
+									  <!-- /.card-body -->
+									</div>
+									<!-- /.card -->
+									<!-- Profile Image -->
+									<div class="card card-primary card-outline">
+									  <div class="card-body box-profile">
+										<div class="text-center">
+										  <img class="profile-user-img img-fluid img-circle"
+											  src="assets/images/ktp.png">
+										</div>
+		
+										<h4 class="profile-username text-center">Foto Slip Gaji</h4>
+										<a href="#" class="btn btn-primary btn-block"><b><i class="fa fa-edit pr-2"></i>Revisi</b></a>
+									  </div>
+									  <!-- /.card-body -->
+									</div>
+									<!-- /.card -->
+								  </div>
+								  <div class="col">
+									<nav aria-label="breadcrumb">
+									  <ol class="breadcrumb">
+										<li class="breadcrumb-item">Verifikasi Data dam EKYC</li>
+										<li class="breadcrumb-item">Proses EKYC</li>
+										<li class="breadcrumb-item text-bold">Proses Verifikasi Data Karyawan</li>
+									  </ol>
+									</nav>
+									<table id="example1" class="table table-bordered table-striped text-center">
+									  <thead>
+									  <tr>
+										<th>Nama Perusahaan</th>
+										<td>PT. Newline Fintech Indonesia</td>
+									  </tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <th>Alamat Perusahaan</th>
+										  <td>Mega Kuningan Biru</td>
+		
+										</tr>
+										<tr>
+										  <th>Jenis Perusahaan</th>
+										  <td>Finansial</td>
+		
+										</tr>
+										<tr>
+										  <th>Jabatan</th>
+										  <td>Staff IT</td>
+										</tr>
+										<tr>
+										  <th>Pendapatan</th>
+										  <td>Rp. 2000.000 - Rp. 5000.000</td>
+		
+										</tr>
+										<tr>
+										  <th>Lama Kerja</th>
+										  <td>3 - 6 Tahun</td>
+		
+										</tr>
+										<tr>
+										  <th>Pendapatan</th>
+										  <td>Rp. 2000.000 - Rp. 5000.000</td>
+		
+										</tr>
+									  </tbody>
+									</table>
+									<button class="btn btn-danger"><i class="fa fa-times-circle pr-2"></i>Data Tidak Sama</button>
+									<button class="btn btn-success"><i class="fa fa-check-circle pr-2"></i>Data Sama</button>
+									
+								  </div>
+								</div>
+								<!-- Akhir verifikasi DATA PEKERJAAN -->
+							  </div>                    
+							  <div class="tab-pane" id="tab_3">
+								<!-- Proses verifikasi DATA PEKERJAAN -->
+								<div class="row">
+								  <div class="col-3">
+									<!-- Profile Image -->
+									<div class="card card-primary card-outline">
+									  <div class="card-body box-profile">
+										<div class="text-center">
+										  <img class="profile-user-img img-fluid img-circle"
+											  src="assets/images/ktp.png">
+										</div>
+										<h4 class="profile-username text-center">Foto NPWP</h4>
+										<a href="#" class="btn btn-primary btn-block"><b><i class="fa fa-edit pr-2"></i>Revisi</b></a>
+									  </div>
+									  <!-- /.card-body -->
+									</div>
+									<!-- /.card -->
+								  </div>
+								  <div class="col">
+									<nav aria-label="breadcrumb">
+									  <ol class="breadcrumb">
+										<li class="breadcrumb-item">Verifikasi Data dam EKYC</li>
+										<li class="breadcrumb-item">Proses EKYC</li>
+										<li class="breadcrumb-item">verifikasi Data Karyawan</li>
+										<li class="breadcrumb-item text-bold">Verifikasi Data NPWP</li>
+									  </ol>
+									</nav>
+									<table id="example1" class="table table-bordered table-striped text-center">
+									  <thead>
+									  <tr>
+										<th>Nomor NPWP</th>
+										<td>78323781387</td>
+									  </tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <th>Nama</th>
+										  <td>Candra Minarta</td>
+										</tr>
+										<tr>
+										  <th>Alamat</th>
+										  <td>Jl.Jendaral Sudirman No.02</td>
+										</tr>
+									  </tbody>
+									</table>
+									<button class="btn btn-danger"><i class="fa fa-times-circle pr-2"></i>Data Tidak Sama</button>
+									<button class="btn btn-success"><i class="fa fa-check-circle pr-2"></i>Data Sama</button>
+									
+								  </div>
+								</div>
+								<!-- Akhir verifikasi DATA PEKERJAAN -->
+							  </div>                    
+							  <div class="tab-pane" id="tab_4">
+								  <div class="row">
+									  <div class="col">
+										<nav aria-label="breadcrumb">
+											<ol class="breadcrumb">
+											  <li class="breadcrumb-item">Proses EKYC</li>
+											  <li class="breadcrumb-item">verifikasi Data Karyawan</li>
+											  <li class="breadcrumb-item">Verifikasi Data NPWP</li>
+											  <li class="breadcrumb-item text-bold">Verifikasi Data Vidio</li>
+											</ol>
+										  </nav>
+									  </div>
+								  </div>
+								<!-- Proses verifikasi DATA PEKERJAAN -->
+								<div class="row">
+								  <div class="col-6">
+									<div class="embed-responsive embed-responsive-16by9" style="height: 250px;">
+									  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+									</div>
+								  </div>
+								  <div class="col-3">
+									<div class="card card-primary card-outline">
+										<div class="card-body box-profile">
+										  <div class="text-center">
+											<img class="profile-user-img img-fluid img-circle"
+												src="assets/images/profile.png">
+										  </div>
+										  <h4 class="profile-username text-center pt-3">Foto Selfie</h4>
+										  
+										</div>
+										<!-- /.card-body -->
+									  </div>
+								  </div>
+								  <div class="col-3">
+									<div class="card card-primary card-outline">
+										<div class="card-body box-profile">
+										  <div class="text-center">
+											<img class="profile-user-img img-fluid img-circle"
+												src="assets/images/ktp.png">
+										  </div>
+										  <h4 class="profile-username text-center pt-4">Foto KTP</h4>
+										  
+										</div>
+										<!-- /.card-body -->
+									  </div>
+								  </div>
+								</div>
+								<div class="row mt-4">
+								  <div class="col">
+									<button class="btn btn-primary"><i class="fa fa-edit pr-2"></i>Revisi</button>
+									<button class="btn btn-danger"><i class="fa fa-times-circle pr-2"></i>Data Tidak Sama</button>
+									<button class="btn btn-success"><i class="fa fa-check-circle pr-2"></i>Data Sama</button>
+								  </div>
+								</div>
+								<!-- Akhir verifikasi DATA PEKERJAAN -->
+							  </div>                    
+							  <div class="tab-pane" id="tab_5">
+								<!-- Proses verifikasi DATA PEKERJAAN -->
+								<div class="row">
+								  <div class="col">
+									<nav aria-label="breadcrumb">
+									  <ol class="breadcrumb">
+										<li class="breadcrumb-item">Proses EKYC</li>
+										<li class="breadcrumb-item">verifikasi Data Karyawan</li>
+										<li class="breadcrumb-item">Verifikasi Data NPWP</li>
+										<li class="breadcrumb-item">Verifikasi Data Vidio</li>
+										<li class="breadcrumb-item text-bold">Keputusan Akhir</li>
+									  </ol>
+									</nav>
+								  </div>
+								  
+								  <div class="col-12">
+									  
+									<div class="card-body table-border-style">
+										<button class="btn btn-primary">
+											Cek FDC
+										</button>
+										<div class="table-responsive mt-2">
+											<table class="table table-hover text-center">
+												<thead>
+													<tr>
+														<th>ID Pelanggan</th>
+														<th>No KTP</th>
+														<th>Nama</th>
+														<th>Nilai Pinjaman</th>
+														<th>Tanggal Pencairan</th>
+														<th>Tanggal Jatuh Tempo</th>
+														<th>DPD Terakhir</th>
+														<th>DPD MAX</th>
+														<th>Sisa Pinjaman</th>
+														<th>Kualitas Pinjaman</th>
+														<th>Status Pinjaman</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>2</td>
+														<td>3671119073293</td>
+														<td>Mulyana</td>
+														<td>Rp. 3000.000</td>
+														<td>02/11/2021</td>
+														<td>02/12/2021</td>
+														<td>-</td>
+														<td>-</td>
+														<td>-</td>
+														<td>Bagus</td>
+														<td>Proses</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										
+									</div>
+									</div>
+								</div>
+								
+								<!-- Akhir verifikasi DATA PEKERJAAN -->
+								<div class="row">
+									
+								  <div class="col-12 text-center">
+									<img src="assets/images/done.png" height="400px">
+								  </div>
+								</div>
+
+								<div class="row mt-3">
+								  <div class="col">
+									<button class="btn btn-warning"><i class="fa fa-clock pr-2"></i>Tunda</button>
+									<button class="btn btn-danger"><i class="fa fa-times-circle pr-2"></i>Tolak</button>
+									<button class="btn btn-success"><i class="fa fa-check-circle pr-2"></i>Lulus</button>   
+								  </div>
+								</div>
+
+							  </div>                    
+							</div>
+						  </div>
+						  
+						</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Required Js -->
+    <script src="assets/js/vendor-all.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/ripple.js"></script>
+    <script src="assets/js/pcoded.min.js"></script>
+
+<!-- Apex Chart -->
+<script src="assets/js/plugins/apexcharts.min.js"></script>
+
+
+<!-- custom-chart js -->
+<script src="assets/js/pages/dashboard-main.js"></script>
+</body>
+
+</html>
